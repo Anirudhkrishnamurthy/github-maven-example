@@ -36,9 +36,7 @@
 			<id>kevinsawicki</id>
 		</developer>
 	</developers>
-<properties>
-    <additionalparam>-Xdoclint:none</additionalparam>
-</properties>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -139,11 +137,17 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<executions>
 					<execution>
+					 <id>attach-javadocs</id>
 						<goals>
 							<goal>jar</goal>
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+                <additionalOptions>
+                    <additionalOption>-Xdoclint:none</additionalOption>
+                </additionalOptions>
+            </configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -155,6 +159,11 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+                <additionalOptions>
+                    <additionalOption>-Xdoclint:none</additionalOption>
+                </additionalOptions>
+            </configuration>
 			</plugin>
 		</plugins>
 	</build>
