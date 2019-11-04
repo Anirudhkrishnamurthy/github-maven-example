@@ -144,6 +144,7 @@
 					</execution>
 				</executions>
 				<configuration>
+				<failOnError>false</failOnError>
                 <additionalOptions>
                     <additionalOption>-Xdoclint:none</additionalOption>
                 </additionalOptions>
@@ -160,6 +161,7 @@
 					</execution>
 				</executions>
 				<configuration>
+				<failOnError>false</failOnError>
                 <additionalOptions>
                     <additionalOption>-Xdoclint:none</additionalOption>
                 </additionalOptions>
